@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+
+                </div>
+                <nav>
+                    <ul id="manuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="Account.html">Accouunt</a></li>
+                    </ul>
+                </nav>
+               <a href="Cart.html"><img src="images/cart.png" alt="cart" height="30px" width="30px"></a>
+                <img src="images/menu.png" class="manu-icon" onclick="manuToggle()">
+            </div>
+        </div>
+
+        <!-- cart details -->
+       <div class="small container cart page">
+           <table>
+               <tr>
+                   <th>Product</th>
+                   <th>Quantity</th>
+                   <th>Subtotal</th>
+               </tr>
+               <tr>
+                   <td>
+                       <div class="cart-info">
+                           <img src="images/buy-1.jpg">
+                           <div>
+                               <p>Printed T-Shirt</p>
+                               <small>Price : $30.00</small><br>
+                               <a href="">Remove</a>
+                           </div>
+                       </div>
+                   </td>
+                   <td><input type="number" value="1"></td>
+                   <td>$30.00</td>
+               </tr>
+               <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>Black Shoes</p>
+                            <small>Price : $10.00</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>Black Trauser</p>
+                            <small>Price : $20.00</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$20.00</td>
+            </tr>
+           </table>
+
+           <div class="total-price">
+               <table>
+                   <tr>
+                       <td>Subtotal</td>
+                       <td>$60.00</td>
+                   </tr>
+                   <tr>
+                    <td>Tex</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$70.00</td>
+                </tr>
+               </table>
+           </div>
+       </div>
+    
+    <!-- footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="f-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="l1">
+                        <img src="images/app-store.png" alt="a1">
+                    </div>
+                </div>
+                <div class="f-col-2">
+                    <img src="images/logo-white.png" alt="logo">
+                    <p>Our purpose is to sustainably make the pleasure <br>and benifits
+                        of sports accessible to the many.
+                    </p>
+                    
+                </div>
+                <div class="f-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href=""><li>Coupons</li></a>
+                        <a href=""><li>Blog Post</li></a>
+                        <a href=""><li>Return Policy</li></a>
+                        <a href=""><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="f-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href=""><li>Facebook</li></a>
+                        <a href=""><li>Instagram</li></a>
+                        <a href=""><li>LinkedIn</li></a>
+                        <a href=""><li>Teligram</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2021 All right reserved</p>
+        </div>
+    </div>
+    <!-- javascript -->
+
+    <script>
+        var manuItems=document.getElementById("manuItems");
+        manuItems.style.maxHeight="0px";
+
+        function manuToggle(){
+            if(manuItems.style.maxHeight=="0px"){
+                manuItems.style.maxHeight="250px";
+            }else{
+                manuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+
+    
+</body>
+
+</html>

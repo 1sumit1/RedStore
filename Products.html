@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+
+                </div>
+                <nav>
+                    <ul id="manuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="Account.html">Accouunt</a></li>
+                    </ul>
+                </nav>
+                <a href="Cart.html"><img src="images/cart.png" alt="cart" height="30px" width="30px"></a>
+                <img src="images/menu.png" class="manu-icon" onclick="manuToggle()">
+            </div>
+        </div>
+    
+
+   
+
+    <!-- Letest products -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select name="shorting">
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by rating</option>
+                <option>Short by popularity</option>
+                <option>short by sale</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="Product-details.html"><img src="images/product-1.jpg" alt="p1"></a>
+                 <h4>Red Printed T-Shirt</h4>
+                 <p>$35.00</p>
+             </div>
+             <div class="col-4">
+                 <img src="images/product-2.jpg" alt="p1">
+                 <h4>Puma Shoes</h4>
+                 <p>$20.00</p>
+             </div>
+             <div class="col-4">
+                 <img src="images/product-3.jpg" alt="p1">
+                 <h4>Black Trauser</h4>
+                 <p>$10.00</p>
+             </div>
+             <div class="col-4">
+                 <img src="images/product-4.jpg" alt="p1">
+                 <h4>Black T-Shirt</h4>
+                 <p>$35.00</p>
+             </div> 
+             <div class="col-4">
+                <img src="images/product-5.jpg" alt="p1">
+                <h4>Rebook Shoes</h4>
+                <p>$25.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="p1">
+                <h4>Puma T-Shirt</h4>
+                <p>$5.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="p1">
+                <h4>Three in One</h4>
+                <p>$5.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="p1">
+                <h4>Possel Watch</h4>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="p1">
+                <h4>Titan Watch</h4>
+                <p>$25.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="p1">
+                <h4>Black Shoes</h4>
+                <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="p1">
+                <h4>Formal shoes</h4>
+                <p>$10.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="p1">
+                <h4>Black Paint</h4>
+                <p>$15.00</p>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    
+    <!-- footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="f-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="l1">
+                        <img src="images/app-store.png" alt="a1">
+                    </div>
+                </div>
+                <div class="f-col-2">
+                    <img src="images/logo-white.png" alt="logo">
+                    <p>Our purpose is to sustainably make the pleasure <br>and benifits
+                        of sports accessible to the many.
+                    </p>
+                    
+                </div>
+                <div class="f-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="f-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                        <li>Teligram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2021 All right reserved</p>
+        </div>
+    </div>
+    <!-- javascript -->
+
+    <script>
+        var manuItems=document.getElementById("manuItems");
+        manuItems.style.maxHeight="0px";
+
+        function manuToggle(){
+            if(manuItems.style.maxHeight=="0px"){
+                manuItems.style.maxHeight="250px";
+            }else{
+                manuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
