@@ -14,6 +14,7 @@ This is my second mini project on e-commerce website(online shoping website).
 - Login and Registeration Page.
 - View Details of product items.
 - Adding product in cart.
+- and responsive.
 
 
   
